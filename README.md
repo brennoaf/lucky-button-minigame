@@ -1,12 +1,9 @@
 🐢 LUCKY BUTTON MINIGAME | JUST FOR LEARN
 
 [ This minigame is a test of luck for a chance to validate your click  
+and score, the percentage will decrease according to your score.   ]   
 
-and score, the percentage will decrease according to your score.   ]  
-
-
-
-MENU: The menu has 2 buttons{<br>
+MENU: The menu has 2 buttons{  
   Config button: Allows user to change assets color by typing color in\n
   english.\n
   Dark/Light Mode: Allows the user change theme.\n
