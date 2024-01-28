@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Minigame</title>
+</head>
+<body class="principal-body" id="main-body">
+    <div class="page-content">
+        <div class="game-interactives">
+            <div class="asset-button" id="button-config">⚙️</div>
+            <div class="asset-button" id="button-darker" onclick="toDarkTheme()">🌙</div>
+        </div>
+        <header class="principal-header">
+            <div class="score-content">
+                <div class="highscore-counter">
+                    <p>Highscore: <strong id="atual-highscore-counter">0</strong></p>
+                </div>
+                <div class="score-counter">
+                    <p>Atual score: <strong id="atual-score-counter">0</strong></p>
+                </div>
+            </div>
+        </header>
+        <main class="page-content-items">
+            <div class="game-content">
+            <div class="button-area">
+                <button type="button" id="button-primary" onclick="scoreCounter()"></button>
+                <div class="button-base"></div>
+            </div>
+            <div class="lucky-content">
+                <div class="show-lucky">
+                    <p>Lucky score chance: 
+                        
+                    </p>
+                    <div class="percent-show" id="percent-shower">
+                        <strong id="lucky-chance">94%</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+
+    <div class="popup-container" id="config-popup-cont">
+        <div class="popup-highlight"></div>
+        <div class="popup-content">
+            <div class="popup-page">
+                <p style="color: black;">Type theme color:</p>
+                <div class="choose-color-field">
+                    <input type="text" id="color-input" oninput="changeColor()">
+                </div>
+                <div class="close-popup" id="popup-close" style="color: black;">&times;</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
