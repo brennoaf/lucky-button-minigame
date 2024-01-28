@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.principal-body{
+    display: flex;
+    justify-content: center;
+
+    background: rgb(242, 247, 255);
+    color: rgb(0, 21, 32);
+}
+
+.page-content{
+    height: 100vh;
+    display: grid;
+}
+
+.game-interactives{
+    display: grid;
+    grid-auto-flow: column;
+    top: 10px;
+    left: 30%;
+    position: absolute;
+
+}.asset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: .5em;
+
+    font-size: 20px;
+    border-radius: 7px;
+    box-shadow: rgb(0, 10, 34) 1px 1px 5px;
+    text-shadow: black 1px 1px 3px;
+    background: rgb(0, 42, 255);
+    cursor: pointer;
+}
+
+.principal-header{
+    margin-top: 5em;
+}
+
+.score-content, .button-area, .lucky-content{
+    display: flex;
+    justify-content: center;
+}
+
+.score-content{
+    font-size: 25px;
+    flex-direction: column;
+}.highscore-counter{
+    display: flex;
+    justify-content: center;
+    }
+
+.button-area #button-primary{
+    width: 10em;
+    height: 8em;
+    z-index: 1;
+
+    border-radius: 100%;
+    border:inset solid;
+    background: rgb(0, 42, 255);
+    filter:grayscale(1);
+    cursor: pointer;
+
+}.button-base{
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    width: 10em;
+    height: 8em;
+
+    border-radius: 100%;
+    border-bottom: solid gray; 
+    border-left: solid gray;
+    border-right: solid gray;
+    box-shadow: rgb(0, 10, 34) 0 4px 5px;
+    background: rgb(186, 186, 186);
+}
+
+.lucky-content{
+    margin-top: 5em;
+}.show-lucky{
+    display: flex;
+    flex-direction: column;
+
+    }.percent-show{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5em;
+        margin-top: 1em;
+
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        background: rgb(0, 42, 255);
+        filter: grayscale(1);
+        border-radius: 15px;
+        box-shadow: rgb(0, 10, 34) 1px 0 10px;
+        }
+
+
+.popup-container{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+
+    transition: 1s;
+
+}.popup-container.open{
+    display: initial;
+}
+
+.popup-highlight{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    background: black;
+    opacity: 60%;
+}
+
+.popup-content{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}.popup-page{
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+
+    border-radius: 15px;
+    background: white;
+    }.close-popup{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+
+        cursor: pointer;
+    }
